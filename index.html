@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>
+    Home
+</title>
+<style>
+
+body,html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+
+}
+.top
+{
+    background-color: white;
+    height: 80px;
+    color: black;
+    padding: 15px;
+    
+}
+.logtext
+{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    float: left;
+    display: table-cell;
+    line-height: 03px;
+    vertical-align: middle;
+}
+.top img
+{
+    float: left;
+    vertical-align: middle;
+    line-height: 03px;
+    margin-top: 30px;
+    
+}
+.nav
+{
+    float: right;
+}
+.nav p
+{
+    margin-right: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.home1
+{
+    background-color: white;
+    height: 270px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+.home2
+
+{
+    background-color: white;
+    margin-left: 10px;
+}
+.about
+{
+    background-color: white;
+    height: 270px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+.about1
+{
+    background-image: url("hap.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.port
+{
+    background-color: white;
+    height: 270px;
+    color: black;
+    
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+.desc
+{
+    height: 100%;
+    width: 40%;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+.pics
+{
+    margin-left: 50px;
+    margin-right: auto;
+    align-items: center;
+}
+.punch
+{
+    background-color:	#E8E8E8;
+    height: 200px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+}
+.cont
+{
+    background-color: white;
+    height: 200px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+.contact
+{
+    background-color:#E8E8E8;
+    height: 600px;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+.form-style-9{
+	max-width: 450px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 50px auto;
+	box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+	border-radius: 10px;
+	border: 6px solid #305A72;
+}
+.form-style-9 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+.form-style-9 ul li{
+	display: block;
+	margin-bottom: 10px;
+	min-height: 35px;
+}
+.form-style-9 ul li  .field-style{
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	padding: 8px;
+	outline: none;
+	border: 1px solid #B0CFE0;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+
+}.form-style-9 ul li  .field-style:focus{
+	box-shadow: 0 0 5px #B0CFE0;
+	border:1px solid #B0CFE0;
+}
+.form-style-9 ul li .field-split{
+	width: 49%;
+}
+.form-style-9 ul li .field-full{
+	width: 100%;
+}
+.form-style-9 ul li input.align-left{
+	float:left;
+}
+.form-style-9 ul li input.align-right{
+	float:right;
+}
+.form-style-9 ul li textarea{
+	width: 100%;
+	height: 100px;
+}
+.form-style-9 ul li input[type="button"], 
+.form-style-9 ul li input[type="submit"] {
+	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+	box-shadow: inset 0px 1px 0px 0px #3985B1;
+	background-color: #216288;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+.form-style-9 ul li input[type="button"]:hover, 
+.form-style-9 ul li input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+	background-color: #28739E;
+}
+.last 
+{
+    width: 100%;
+    height: 20px;
+}
+.foot 
+{
+    height: 150px;
+    background-color: #E8E8E8;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    
+}
+.foot img
+{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+</style>
+
+
+</head>
+
+<body>
+    <div class="top">
+        <img src="logo2.png" height="50" width="200">
+
+        <pre class="nav">
+            <p>Home     Gallery     About       Content </p>
+        </div>
+    </div>
+
+    <img src="people.jpg" height="1200px" width="1900">
+    <div class="home1">
+        <p>Capture the Beautiful moments of your life in professionally taken photos</p>
+        <p style="font-size: 40px;"> Weddings, Family Reunion, Baby Moments, Events</p>
+        <img src="logo.png" height="70" width="70">
+    </div>
+    <div class="home2">
+        <img src="fam.jpg" height="450px" width="540px">
+        <img src="wed.jpg" height="450px" width="450px">
+        <img src="bab.jpg" height="450px" width="450px">
+        <img src="pap.jpg" height="450px" width="450px">
+    </div>
+    <div class="about">
+        <p>About Say Say Photography </p>
+        <p style="font-size: 20px;"> Hey There! Pleased to meet you. Here is a little about me.</p>
+        
+    </div>
+    <div class="about1">
+        
+        <div class="desc">
+            <p>
+                    
+                    Shaw Photography is about the pursuit of perfection when it comes to Architectural Photography. Using creativity, light and composition to represent form and space as it was intended by its creator.
+                    
+                    ​
+                    
+                    There are so many variables when it comes to capturing a building or space that can affect the way it looks. Things like the equipment and type of lens used, the angle, the time of day or even the time of year, the weather, changes in the surrounding environment and a host of other factors.
+                    
+                     
+                    
+                    Typically my clients are seeking images to apply for awards, or to use in a variety of promotional ways such as billboards, magazines and web and, as such, want a photographer who understands the complexities of what goes into Architecture Photography, and has the skills and experience to represent their work as they intended it.
+                    
+                    ​
+                    
+                    My clients love the work they do. In fact it is not just their work, it is their passion. There are literally weeks, months, and years of work that go into their projects. Even beyond that, my images will go into representing my clients' brand that they have spent their career building.
+                    
+                     
+                    
+                    Is this you? 
+                    
+                     
+                    
+                    Are you passionate about the work you do? If so, then capturing your passion is my passion!
+            </p>
+        </div>
+    </div>
+    <div class="port">
+        <p style="font-size: 40px">Recent Projects</p>
+        <p>These are the recent projects I have worked on.</p>
+
+    </div>
+
+    <div class="pics"> 
+            <img src="w1.jpg" height="450px" width="450px">
+            <img src="w2.jpg" height="450px" width="450px">
+            <img src="w3.jpg" height="450px" width="450px">
+            <img src="w4.jpg" height="450px" width="450px">
+            <img src="w5.jpg" height="450px" width="450px">
+            <img src="w6.jpg" height="450px" width="450px">
+            <img src="w7.jpg" height="450px" width="450px">
+            <img src="w8.jpg" height="450px" width="450px">
+    </div>
+    <div class="punch">
+        <p>In photography there is a reality so subtle that it becomes more real than reality.</p>
+    </div>
+    <div class="cont">
+            <p>Contact Us</p>
+            <p style="font-size: 25px">Feel free to get in touch with us.</p>
+            <img src="logo.png" height="50" width="50">
+        </div>
+
+    <div class="contact">
+        Contacts
+        <form class="form-style-9">
+            <ul>
+            <li>
+                <input type="text" name="field1" class="field-style field-split align-left" placeholder="Name..." />
+                <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email..." />
+            
+            </li>
+            <li>
+                <input type="text" name="field3" class="field-style field-split align-left" placeholder="Phone..." />
+                <input type="url" name="field4" class="field-style field-split align-right" placeholder="Service..." />
+            </li>
+            <li>
+            <input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject..." />
+            </li>
+            <li>
+            <textarea name="field5" class="field-style" placeholder="Message..."></textarea>
+            </li>
+            <li>
+            <input type="submit" value="Send Message" />
+            </li>
+            </ul>
+            </form>
+            <p style="font-size: 15px">Email: ogingadavid32@gmail.com</p>
+            <p style="font-size: 15px"> Phone: +254 770 054 797</p>
+    </div>
+    <div class="last">
+       
+    </div>
+    <div class="foot">
+        <img src="face.png" alt="facebook" height="30px" width="30px">
+        <img src="insta.png" alt="facebook" height="30px" width="30px">
+        
+    </div>
+
+
+
+
+    
+</body>
+
+
+</html>
